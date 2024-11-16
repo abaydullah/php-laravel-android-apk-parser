@@ -1,6 +1,6 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
 
 /**
  * This file is part of the Apk Parser package.
@@ -21,7 +21,7 @@ class Stream
 
     /**
      * @param resource $stream File stream.
-     * @return \ApkParser\Stream
+     * @return \Abaydullah\ApkParser\Stream
      * @throws \Exception
      */
     public function __construct($stream)

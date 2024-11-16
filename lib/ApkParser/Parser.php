@@ -1,6 +1,12 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
+
+
+use Abaydullah\ApkParser\Archive;
+use Abaydullah\ApkParser\Manifest;
+use Abaydullah\ApkParser\ResourcesParser;
+use Abaydullah\ApkParser\XmlParser;
 
 /**
  * This file is part of the Apk Parser package.
@@ -40,7 +46,7 @@ class Parser
 
     /**
      * Get Manifest Object
-     * @return \ApkParser\Manifest
+     * @return \Abaydullah\ApkParser\Manifest
      */
     public function getManifest()
     {
@@ -54,7 +60,7 @@ class Parser
      * - recompress
      * - and other ZipArchive features.
      *
-     * @return \ApkParser\Archive
+     * @return \Abaydullah\ApkParser\Archive
      */
     public function getApkArchive()
     {

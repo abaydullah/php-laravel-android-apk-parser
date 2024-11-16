@@ -1,6 +1,6 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
 
 /**
  * This file is part of the Apk Parser package.
@@ -19,7 +19,7 @@ class ManifestXmlElement extends \SimpleXMLElement
     public function getPermissions($lang = 'en')
     {
         /**
-         * @var \ApkParser\ManifestXmlElement
+         * @var \Abaydullah\ApkParser\ManifestXmlElement
          */
         $permsArray = $this->{'uses-permission'};
         $permissions = json_decode(file_get_contents(__DIR__ . "/lang/{$lang}.permissions.json"), true);
@@ -49,7 +49,7 @@ class ManifestXmlElement extends \SimpleXMLElement
     public function getPermissionsRaw()
     {
         /**
-         * @var \ApkParser\ManifestXmlElement
+         * @var \Abaydullah\ApkParser\ManifestXmlElement
          */
         $permsArray = $this->{'uses-permission'};
         $perms = array();

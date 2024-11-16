@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-use ApkParser\Parser;
+use Abaydullah\ApkParser\Parser;
 
 class ParserTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var ApkParser\Parser
+     * @var Abaydullah\ApkParser\Parser
      */
     private $subject;
 
@@ -27,7 +27,7 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @throws \ApkParser\Exceptions\XmlParserException
+     * @throws \Abaydullah\ApkParser\Exceptions\XmlParserException
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      */
@@ -43,7 +43,7 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @throws \ApkParser\Exceptions\XmlParserException
+     * @throws \Abaydullah\ApkParser\Exceptions\XmlParserException
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      */
@@ -51,13 +51,13 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     {
         $application = $this->subject->getManifest()->getApplication();
 
-        $this->assertInstanceOf('ApkParser\Application', $application);
+        $this->assertInstanceOf('\Abaydullah\ApkParser\Application', $application);
         $this->assertEquals($application->getIcon(), '0x7f020001');
         $this->assertEquals($application->getLabel(), '0x7f050001');
     }
 
     /**
-     * @throws \ApkParser\Exceptions\XmlParserException
+     * @throws \Abaydullah\ApkParser\Exceptions\XmlParserException
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      */
@@ -91,7 +91,7 @@ class ParserTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @throws \ApkParser\Exceptions\XmlParserException
+     * @throws \Abaydullah\ApkParser\Exceptions\XmlParserException
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      */

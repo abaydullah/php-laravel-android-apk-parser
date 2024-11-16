@@ -1,5 +1,5 @@
 {
-  "name": "abaydullah/php-apk-parser",
+  "name": "abaydullah/php-laravel-android-apk-parser",
   "type": "library",
   "description": "Read basic info about an application from android .apk file",
   "keywords": [
@@ -20,7 +20,7 @@
     }
   ],
   "require": {
-    "php": ">=8.0",
+    "php": "^8.1",
     "ext-simplexml": "*",
     "ext-json": "*",
     "ext-libxml": "*",
@@ -28,7 +28,7 @@
     "ext-zip": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8.5",
+    "phpunit/phpunit": "^11.1",
     "friendsofphp/php-cs-fixer": "^3.1"
   },
   "repositories": [
@@ -38,8 +38,8 @@
     }
   ],
   "autoload": {
-    "psr-0": {
-      "ApkParser": "lib"
+    "psr-4": {
+      "Abaydullah\\": "lib/"
     }
   },
   "scripts": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ApkParser\Exceptions;
+namespace Abaydullah\ApkParser\Exceptions;
 
 /**
  * This file is part of the Apk Parser package.

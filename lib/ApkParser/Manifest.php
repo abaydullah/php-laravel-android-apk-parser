@@ -1,6 +1,6 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
 
 /**
  * This file is part of the Apk Parser package.
@@ -1126,7 +1126,7 @@ class Manifest extends Xml
      * @return ManifestXmlElement|\SimpleXMLElement
      * @throws Exceptions\XmlParserException
      */
-    public function getXmlObject($className = '\ApkParser\ManifestXmlElement')
+    public function getXmlObject($className = '\Abaydullah\ApkParser\ManifestXmlElement')
     {
         return $this->xmlParser->getXmlObject($className);
     }

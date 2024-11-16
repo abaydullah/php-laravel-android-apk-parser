@@ -1,6 +1,9 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
+
+use Abaydullah\ApkParser\Activity;
+use Abaydullah\ApkParser\ManifestXmlElement;
 
 /**
  * This file is part of the Apk Parser package.
@@ -13,7 +16,7 @@ namespace ApkParser;
 class Application
 {
     /**
-     * @var \ApkParser\Activity[]
+     * @var \Abaydullah\ApkParser\Activity[]
      */
     public $activities = array();
 

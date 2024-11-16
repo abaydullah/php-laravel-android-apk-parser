@@ -1,8 +1,8 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
 
-use ApkParser\Exceptions\XmlParserException;
+use Abaydullah\ApkParser\Exceptions\XmlParserException;
 
 /**
  * This file is part of the Apk Parser package.

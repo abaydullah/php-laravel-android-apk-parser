@@ -10,7 +10,7 @@
 
 include 'autoload.php';
 
-$apk = new ApkParser\Parser('EBHS.apk');
+$apk = new Abaydullah\ApkParser\Parser('EBHS.apk');
 
 echo '<pre>';
 foreach ($apk->getClasses() as $className) {

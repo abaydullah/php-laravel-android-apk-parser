@@ -7,15 +7,15 @@ class XmlParserTest extends \PHPUnit\Framework\TestCase
 {
     public function testXmlObject()
     {
-        $mock = $this->getMockBuilder('ApkParser\XmlParser')
+        $mock = $this->getMockBuilder('Abaydullah\ApkParser\XmlParser')
             ->disableOriginalConstructor()
-            ->setMethods(array('getXmlString'))
+            ->onlyMethods(array('getXmlString'))
             ->getMock();
 
         $file = __DIR__ . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR . 'invalid.xml';
         $mock->expects($this->once())->method('getXmlString')->will($this->returnValue(file_get_contents($file)));
 
-        $this->expectException(\ApkParser\Exceptions\XmlParserException::class);
+        $this->expectException(\Abaydullah\ApkParser\Exceptions\XmlParserException::class);
 
         $mock->getXmlObject();
     }

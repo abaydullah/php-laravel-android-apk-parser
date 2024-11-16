@@ -9,8 +9,10 @@
  * file that was distributed with this source code.
  */
 
+use Abaydullah\ApkParser\Parser;
+
 include 'autoload.php';
-$apk = new \ApkParser\Parser('vitrinova.apk', ['manifest_only' => false]);
+$apk = new Parser('vitrinova.apk', ['manifest_only' => false]);
 $resourceId = $apk->getManifest()->getApplication()->getIcon();
 $resources = $apk->getResources($resourceId);
 

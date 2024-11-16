@@ -9,8 +9,10 @@
  * file that was distributed with this source code.
  */
 
+use Abaydullah\ApkParser\Parser;
+
 include 'autoload.php';
-$apk = new \ApkParser\Parser('EBHS.apk');
+$apk = new Parser('EBHS.apk');
 
 $manifest = $apk->getManifest();
 $permissions = $manifest->getPermissions();

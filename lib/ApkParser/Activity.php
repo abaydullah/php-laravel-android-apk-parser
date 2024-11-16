@@ -1,6 +1,6 @@
 <?php
 
-namespace ApkParser;
+namespace Abaydullah\ApkParser;
 
 /**
  * This file is part of the Apk Parser package.
@@ -16,7 +16,7 @@ class Activity
     public $name;
 
     /**
-     * @var \ApkParser\IntentFilter[] $filters
+     * @var \Abaydullah\ApkParser\IntentFilter[] $filters
      */
     public $filters = array();
 
