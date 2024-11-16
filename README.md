@@ -7,8 +7,7 @@ files contained in the APK file to a given directory.
 
 ### Requirements
 
-PHP 8.0+  
-PHP 7.3+ is in [2.x.x](https://github.com/tufanbarisyildirim/php-apk-parser/tree/v2.x.x) branch
+PHP 8.1+  
 
 Installation
 ------------
