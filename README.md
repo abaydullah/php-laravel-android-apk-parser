@@ -87,14 +87,10 @@ Tests are powered by PHPUnit. You have several options.
   or `composer --dev install`. Then `bin/vendor/phpunit` to run version installed by Composer. This ensures that you are
   running a version compatible with the test suite.
 
-## Contributing
 
-Fork the repo, make your changes, add your name to developers, and create a pull request with a comment that describe
-your changes. That's all!
-[Thanks to all contributers](https://github.com/tufanbarisyildirim/php-apk-parser/graphs/contributors)
 
 ## Thanks
-
+This Package Modified From Here https://github.com/tufanbarisyildirim/php-apk-parser
 Thanks JetBrains for the free open source license
 
 <a href="https://www.jetbrains.com/?from=tufanbarisyildirim" target="_blank">
